@@ -1,0 +1,107 @@
+html,
+body {
+    font-size: 20px;
+    padding: 2rem;
+    background-image: url(marble.png);
+    background-repeat: round;
+    background-size: cover;
+}
+
+h1{text-align: center;}
+
+#cinnamon img {
+    margin-top: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    padding: 1rem;
+}
+
+#eggs img{margin-top: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    padding: 1rem;
+}
+
+#walkingtaco img{margin-top: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    padding: 1rem;
+}
+
+#bbqchicken img {margin-top: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    padding: 1rem;
+}
+
+#potatopack img {margin-top: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    padding: 1rem;
+
+}
+
+.flex-nav{display:flex;
+    justify-content: center;}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+    width: 100%;
+    background-color: rgb(168, 206, 168);
+flex-wrap: wrap;
+}
+
+
+nav a:hover {
+    background-color: rgb(114, 141, 127);
+}
+
+nav a {
+    border: 0.05rem solid black;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    flex: 1;
+    background-color: azure;
+    padding: 1rem;
+    margin: 0.25rem;
+    box-shadow: 0.15rem 0.15rem 0.15rem  rgb(59, 73, 59);
+    max-width: fit-content;
+
+}
+
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(168, 206, 168);
+}
+
+tbody tr:hover {
+    background-color: lightgray;
+}
+
+thead,
+tfoot {
+    background-color: rgb(114, 141, 127);
+}
+
+
+audio{display:flex;}
