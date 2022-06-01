@@ -1,16 +1,28 @@
-var parameters = {
-    target: '#myFunction',
+function getInput(id) {
+  return document.getElementById(id).value;
+}
+
+
+function plot() {
+  var parameters = {
+    target: '.target',
     data: [{
-      fn: 'sin(x)', 
+      fn: getInput("function"),
       color: 'red'
-   }       
-          ],
+    }
+    ],
     grid: true,
-    yAxis: {domain: [-1, 1]},
-    xAxis: {domain: [0, 2*Math.PI]}
-  };
-  
-  function plot() {
-    functionPlot(parameters);
+    yAxis: {
+      domain: [
+        parseInt(getInput("yMin")),
+        parseInt(getInput("yMax"))
+      ]
+    },
+    xAxis: {
+      domain: [parseInt(getInput("xMin")),
+      parseInt(getInput("xMax"))
+    ]
+    }
   }
-  
+  functionPlot(parameters);
+}

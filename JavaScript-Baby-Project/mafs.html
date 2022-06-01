@@ -8,12 +8,23 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+    <script src="script.js" defer></script>
     <title>Mafs</title>
 </head>
 
 <body>
-    <form action=""><input type="text" id="input1"><input type="text" id="input2"><input type="text" id="input3"><input
-            type="text" id="input4"><input type="text" id="input5"></form>
+    <form action="">
+        <label for="yMin">Minimum Y:</label>
+        <input type="text" id="yMin" name="yMin">
+        <label for="yMax">Maximum Y</label>
+        <input type="text" id="yMax" name="yMax">
+        <label for="xMin">Minimum X</label>
+        <input type="text" id="xMin" name="xMin">
+        <label for="xMax">Maximum X</label>
+        <input type="text" id="xMax" name="xMax">
+        <label for="function">Function</label>
+        <input type="text" id="function" name="function"></form>
+        <button onClick="plot()">Plot</button>
     <div class="target"></div>
 </body>
 
