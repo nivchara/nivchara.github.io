@@ -8,19 +8,19 @@ function plot() {
     target: '.target',
     data: [{
       fn: getInput("function"),
-      color: 'red'
+      color: getInput("color")
     }
     ],
     grid: true,
     yAxis: {
       domain: [
-        parseInt(getInput("yMin")),
-        parseInt(getInput("yMax"))
+        getInput("yMin"),
+        getInput("yMax")
       ]
     },
     xAxis: {
-      domain: [parseInt(getInput("xMin")),
-      parseInt(getInput("xMax"))
+      domain: [getInput("xMin"),
+      getInput("xMax")
     ]
     }
   }

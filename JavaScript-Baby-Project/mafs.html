@@ -13,18 +13,21 @@
 </head>
 
 <body>
-    <form action="">
+    <form>
         <label for="yMin">Minimum Y:</label>
-        <input type="text" id="yMin" name="yMin">
+        <input type="number" id="yMin" name="yMin" value="-20">
         <label for="yMax">Maximum Y</label>
-        <input type="text" id="yMax" name="yMax">
+        <input type="number" id="yMax" name="yMax" value="20">
         <label for="xMin">Minimum X</label>
-        <input type="text" id="xMin" name="xMin">
+        <input type="number" id="xMin" name="xMin" value="-20">
         <label for="xMax">Maximum X</label>
-        <input type="text" id="xMax" name="xMax">
+        <input type="number" id="xMax" name="xMax" value="20">
+        <label for="color">Color</label><input type="color" name="color" id="color">
         <label for="function">Function</label>
-        <input type="text" id="function" name="function"></form>
-        <button onClick="plot()">Plot</button>
+        <input type="text" id="function" name="function" value="1/x">  
+        <button onClick="plot()" type="button">Plot</button>
+    </form>  
+   
     <div class="target"></div>
 </body>
 

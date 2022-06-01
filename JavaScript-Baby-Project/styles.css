@@ -1,0 +1,27 @@
+body,
+html {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    float: left;
+}
+
+
+button {
+    flex: 1;
+    padding: 1rem;
+    float: bottom;
+font-size: inherit;}
+
+
+input {
+    flex: 1;
+    height: 2rem;
+    font-size: inherit;
+}
+
