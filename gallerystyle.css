@@ -2,9 +2,9 @@ body,
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    font-size: 20px;
+    font-size: 1.11rem;
     line-height: 1.6;
-    background-image: linear-gradient(45deg, #fff6a2, #d8abfa, #b07bd8, #5c5a5a);
+    background-image: linear-gradient(45deg, #b7c9c1, #ccaccb);
     background-size: 400%;
     animation: bg-animation 20s infinite alternate;
 }
@@ -19,29 +19,20 @@ html {
     }
 }
 
-
 .header {
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    position: fixed;
-    background: white;
-}
-
-.spacer {
-    height: 10rem;
-}
-
-.banner {
-    margin: 0, 0, 0, 0.5;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-style: italic;
-    font-size: 2rem;
-    color: rgb(27, 78, 78);
-    line-height: 0.8;
+    font-family: Lucida;
+    padding: 0.5rem;
     text-align: center;
+    color: black;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 1px black dashed;
+    border-bottom: 1px black dashed;
 }
 
 .main-flex-nav {
@@ -62,18 +53,6 @@ nav a {
 }
 
 nav a:hover {
-    color: aqua;
-}
-
-button{
-    font-size: 20px;
-    border-radius: 12px;
-    transition-duration: 0.5s;
-}
-
-
-button:hover {
-    background-color: white;
-    color: magenta;
-
-}
+background-color: #948994;
+    }
+     
