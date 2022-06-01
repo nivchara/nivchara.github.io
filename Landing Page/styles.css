@@ -1,0 +1,46 @@
+body,
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125em;
+    line-height: 1.6;
+    background-image: linear-gradient(45deg, #fff6a2, #d8abfa, #b07bd8, #5c5a5a);
+    background-size: 400%;
+    animation: bg-animation 20s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right
+    }
+}
+
+
+.header {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.15);
+}
+
+.banner {
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color: rgb(27, 78, 78);
+    line-height: 0.8;
+    margin: 0;
+    text-align: center;
+}
