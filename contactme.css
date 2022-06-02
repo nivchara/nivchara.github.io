@@ -1,0 +1,55 @@
+body,
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    font-size: 1.11rem;
+    line-height: 1.6;
+    background-image: linear-gradient(45deg, #b7c9c1, #ccaccb);
+    background-size: 400%;
+    animation: bg-animation 20s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right
+    }
+}
+
+.header {
+    font-family: Lucida;
+    padding: 0.5rem;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 1px black dashed;
+    border-bottom: 1px black dashed;
+}
+
+.main-flex-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+nav a {
+    flex: 1;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+nav a:hover {
+    background-color: #948994;
+}

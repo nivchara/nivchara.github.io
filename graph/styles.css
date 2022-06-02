@@ -11,13 +11,12 @@ form {
     float: left;
 }
 
-
 button {
     flex: 1;
     padding: 1rem;
     float: bottom;
-font-size: inherit;}
-
+    font-size: inherit;
+}
 
 input {
     flex: 1;
@@ -25,3 +24,17 @@ input {
     font-size: inherit;
 }
 
+.target {
+    min-width: 550px;
+    min-height: 350px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 0.5rem;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+}
