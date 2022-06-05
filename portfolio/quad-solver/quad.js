@@ -20,7 +20,8 @@ function rootList(a, b, c) {
 }
 
 function handle() {
-    // print out the roots of the quadratic given by a b and c
+    document.getElementById('a').onclick(a.)
+        // print out the roots of the quadratic given by a b and c
     let a = document.getElementById("a").value;
     let b = document.getElementById("b").value;
     let c = document.getElementById("c").value;
