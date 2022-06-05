@@ -9,16 +9,6 @@
 body {
     background-image: linear-gradient(45deg, #3b5c3e, #5d9387, #418c80, #317a8b);
     background-size: 400%;
-    animation: bg-animation 20s infinite alternate;
-}
-
-@keyframes bg-animation {
-    0% {
-        background-position: left;
-    }
-    100% {
-        background-position: right
-    }
 }
 
 .calculator-grid {
@@ -66,4 +56,13 @@ body {
 .output .current-operand {
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
+}
+
+h3 a {
+    color: white;
+    cursor: pointer;
+}
+
+h3 a:hover {
+    color: aqua;
 }
