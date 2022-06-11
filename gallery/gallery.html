@@ -9,44 +9,43 @@
     <link rel="stylesheet" href="gallerystyle.css">
 </head>
 
+
 <body>
+    <div class="header">
+        <h1 class="banner">KRBY Design</h1>
+        <nav class="main-flex-nav">
+            <a href="/index.html">Home</a>
+            <a href="../portfolio/portfolio.html">Portfolio</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="../resume/resume.html">Resume</a>
+            <a href="../contact-me/contactme.html">Contact</a>
+        </nav>
 
-    <body>
-        <div class="header">
-            <h1 class="banner">KRBY Design</h1>
-            <nav class="main-flex-nav">
-                <a href="/index.html">Home</a>
-                <a href="../portfolio/portfolio.html">Portfolio</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="../resume/resume.html">Resume</a>
-                <a href="../contact-me/contactme.html">Contact</a>
-            </nav>
+        <h1>Gallery Page</h1>
 
-            <h1>Gallery Page</h1>
+        <div class="carousel">
 
-            <div class="carousel">
+            <button class="carousel__button carousel__button--left"><img src="/icons/svg/arrow-left.svg" alt="icon of a camera" height="24px" width="24px"></button>
 
-                <button class="carousel__button carousel__button--left"><img src="/icons/svg/arrow-left.svg" alt="icon of a camera" height="24px" width="24px"></button>
+            <div class="carousel__track-container">
 
-                <div class="carousel__track-container">
-
-                    <ul class="carousel__track">
-                        <li class="carousel__slide"><img class="carousel-img" src="carousel-img/vatican.jpg" alt="a bird's eye view of the Vatican City" title="a bird's eye view of the Vatican City"></li>
-                        <li class="carousel__slide"><img class="carousel-img" src="carousel-img/yellowflower.jpg" alt="a photo of a yellow flower in Pompeii, Italy" title="a photo of a yellow flower in Pompeii, Italy"></li>
-                        <li class="carousel__slide"><img class="carousel-img" src="carousel-img/wheel.jpg" alt="a photo of a wheel against a wall" title="a photo of a wheel against a wall"></li>
-                    </ul>
-                </div>
-
-                <button class="carousel__button carousel__button--right"><img src="/icons/svg/arrow-right.svg" alt="icon of a camera" height="24px" width="24px"></button>
-
-                <div class="carousel_nav">
-                    <button class="carousel__indicator current-slide"></button>
-                    <button class="carousel__indicator"></button>
-                    <button class="carousel__indicator"></button>
-                </div>
+                <ul class="carousel__track">
+                    <li class="carousel__slide"><img class="carousel-img" src="carousel-img/vatican.jpg" alt="a bird's eye view of the Vatican City" title="a bird's eye view of the Vatican City"></li>
+                    <li class="carousel__slide"><img class="carousel-img" src="carousel-img/yellowflower.jpg" alt="a photo of a yellow flower in Pompeii, Italy" title="a photo of a yellow flower in Pompeii, Italy"></li>
+                    <li class="carousel__slide"><img class="carousel-img" src="carousel-img/bee.jpg" alt="a photo of a bee" title="a photo of a bee"></li>
+                </ul>
             </div>
 
-    </body>
-    <script src="gallery.js"></script>
+            <button class="carousel__button carousel__button--right"><img src="/icons/svg/arrow-right.svg" alt="icon of a camera" height="24px" width="24px"></button>
+
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+        </div>
+
+</body>
+<script src="gallery.js"></script>
 
 </html>

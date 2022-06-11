@@ -1,117 +1,116 @@
-body,
-html {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    min-height: 100vh;
-    font-size: 1.11rem;
-    line-height: 1.6;
-    background-image: linear-gradient(45deg, #226c4b, #d86caf);
-    background-size: 175%;
-}
-
-.header {
-    font-family: Lucida;
-    padding: 0.5rem;
-    text-align: center;
-    color: black;
-    font-size: 1rem;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    border-top: 1px black dashed;
-    border-bottom: 1px black dashed;
-}
-
-.main-flex-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-nav a {
-    flex: 1;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    padding: 2rem;
-    font-size: 1.8rem;
-}
-
-nav a:hover {
-    background-color: #eec2ee;
-}
-
-.carousel {
-    position: relative;
-    height: 600px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.carousel-img {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel__track {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.carousel__track-container {
-    height: 100%;
-    position: relative;
-}
-
-.carousel__slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.carousel__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-.carousel__button--left {
-    left: -80px;
-}
-
-.carousel__button--right {
-    right: -80px;
-}
-
-.carousel__button img {
-    width: 50px;
-}
-
-.carousel_nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    background-color: rgba(103, 36, 103, 0.75);
-}
-
-.carousel__indicator {
-    border: 0;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: 0 15px;
-    background: rgb(255, 255, 255);
-}
-
-.carousel__indicator.current-slide {
-    background: rgba(121, 100, 100, 0.75);
-}
+    body,
+    html {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        min-height: 100vh;
+        font-size: 1.11rem;
+        line-height: 1.6;
+    }
+    
+    .header {
+        font-family: Lucida;
+        padding: 0.5rem;
+        text-align: center;
+        color: black;
+        font-size: 1rem;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-top: 1px black dashed;
+        border-bottom: 1px black dashed;
+    }
+    
+    .main-flex-nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    nav a {
+        flex: 1;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        padding: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    nav a:hover {
+        background-color: #eec2ee;
+    }
+    
+    .carousel {
+        position: relative;
+        height: 600px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .carousel-img {
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+        /* object-fit: cover made img stretchy and me sad*/
+    }
+    
+    .carousel__track {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    
+    .carousel__track-container {
+        height: 100%;
+        position: relative;
+    }
+    
+    .carousel__slide {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .carousel__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    .carousel__button--left {
+        left: -80px;
+    }
+    
+    .carousel__button--right {
+        right: -80px;
+    }
+    
+    .carousel__button img {
+        width: 50px;
+    }
+    
+    .carousel__nav {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        background-color: rgba(103, 36, 103, 0.75);
+    }
+    
+    .carousel__indicator {
+        border: 0;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin: 0 15px;
+        background: rgb(255, 255, 255);
+    }
+    
+    .carousel__indicator.current-slide {
+        background: rgba(54, 186, 78, 0.75);
+    }

@@ -1,9 +1,9 @@
-const track = document.querySelector('carousel__track');
+const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
 const previousButton = document.querySelector('.carousel__button--left');
 const dotNav = document.querySelector('.carousel__nav');
-const dot = array.from(dotNav.children);
+const dot = Array.from(dotNav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
 
 //arrange slides next to one another
