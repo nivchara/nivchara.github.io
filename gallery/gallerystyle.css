@@ -16,6 +16,10 @@
         font-size: 1rem;
     }
     
+    p {
+        font-size: 25px;
+    }
+    
     nav {
         display: flex;
         flex-wrap: wrap;
