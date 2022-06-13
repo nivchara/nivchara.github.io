@@ -23,7 +23,22 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 
 const updateDots = (currentDot, targetDot) => {
     currentDot.classList.remove('current-slide');
+    targetDot.classList.add('current-slide');
+    const targetIndex = dot.findIndex(slide => slide === targetDot);
+    hideShowArrows(targetIndex);
+}
 
+const hideShowArrows = (targetIndex) => {
+    if (targetIndex === 0) {
+        previousButton.classList.add('is-hidden');
+        nextButton.classList.remove('is-hidden');
+    } else if (targetIndex === slides.length - 1) {
+        previousButton.classList.remove('is-hidden');
+        nextButton.classList.add('is-hidden');
+    } else {
+        previousButton.classList.remove('is-hidden');
+        nextButton.classList.remove('is-hidden');
+    }
 }
 
 //when I click right, move slides to the right 
@@ -32,8 +47,11 @@ nextButton.addEventListener('click', e => {
     const nextSlide = currentSlide.nextElementSibling;
     const currentDot = dotNav.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
-
+    const nextIndex = slides.findIndex(slide => slide === nextSlide);
     moveToSlide(track, currentSlide, nextSlide);
+    updateDots(currentDot, nextDot);
+
+
 
 });
 
@@ -43,8 +61,12 @@ previousButton.addEventListener('click', e => {
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = dotNav.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
+    const prevIndex = slides.findIndex(slide => slide === prevSlide);
+
 
     moveToSlide(track, currentSlide, prevSlide);
+    updateDots(currentDot, prevDot);
+
 
 });
 
@@ -56,13 +78,25 @@ dotNav.addEventListener('click', e => {
 
     if (!targetDot) return;
 
-    const currentSlide = track.querySelector('current-slide');
-    const currentDot = dotNav.querySelector('current-slide');
+    const currentSlide = track.querySelector('.current-slide');
+    //console.log(`currentSlide = ${currentSlide}`);
+    const currentDot = dotNav.querySelector('.current-slide');
     const targetIndex = dot.findIndex(dot => dot === targetDot);
     const targetSlide = slides[targetIndex];
+    //console.log(`targetSlide = ${targetSlide}`);
 
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
 
 
+
 });
+
+//gallery.js:19 Uncaught TypeError: Cannot read properties of null (reading 'style')
+//at moveToSlide(gallery.js: 19: 58)
+//
+
+//gallery.js:36 Uncaught TypeError: Cannot read properties of undefined (reading 'remove')
+//at hideShowArrows(gallery.js: 36: 34)
+//at updateDots(gallery.js: 28: 5)
+//at HTMLDivElement. < anonymous > (gallery.js: 89: 5) at HTMLButtonElement. < anonymous > (gallery.js: 51: 5)
