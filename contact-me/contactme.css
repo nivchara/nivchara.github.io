@@ -44,3 +44,7 @@ nav a {
 nav a:hover {
     background-color: #948994;
 }
+
+img {
+    max-width: 25rem;
+}
