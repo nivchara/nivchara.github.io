@@ -4,19 +4,9 @@ html {
     min-height: 100vh;
     font-size: 1.11rem;
     line-height: 1.6;
-    background-image: linear-gradient(45deg, #c5f9d7,#f7d486,#f27a7d);
+    background-image: linear-gradient(45deg, #c5f9d7, #f7d486, #f27a7d);
     background-size: 400%;
     animation: bg-animation 20s infinite alternate;
-}
-
-@keyframes bg-animation {
-    0% {
-        background-position: left;
-    }
-
-    100% {
-        background-position: right
-    }
 }
 
 .header {
@@ -40,7 +30,6 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-
 }
 
 nav a {
@@ -53,6 +42,5 @@ nav a {
 }
 
 nav a:hover {
-background-color: #ebc791;
-    }
-     
+    background-color: #ebc791;
+}

@@ -9,16 +9,6 @@ html {
     animation: bg-animation 20s infinite alternate;
 }
 
-@keyframes bg-animation {
-    0% {
-        background-position: left;
-    }
-
-    100% {
-        background-position: right
-    }
-}
-
 .header {
     font-family: Lucida;
     padding: 0.5rem;
@@ -40,7 +30,6 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-
 }
 
 nav a {
@@ -53,20 +42,16 @@ nav a {
 }
 
 nav a:hover {
-background-color: #8158a0;
-    }
-     
- 
+    background-color: #8158a0;
+}
 
-button{
+button {
     font-size: 20px;
     border-radius: 12px;
     transition-duration: 0.5s;
 }
 
-
 button:hover {
     background-color: white;
     color: magenta;
-
 }
