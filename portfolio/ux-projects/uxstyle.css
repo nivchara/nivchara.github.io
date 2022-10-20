@@ -1,0 +1,75 @@
+body,
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    font-size: 1.11rem;
+    line-height: 1.6;
+    background-image: linear-gradient(45deg, #c5f9d7, #f7d486, #f27a7d);
+    background-size: 400%;
+    animation: bg-animation 20s infinite alternate;
+}
+
+.header {
+    font-family: Lucida;
+    padding: 0.5rem;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 1px black dashed;
+    border-bottom: 1px black dashed;
+}
+
+.main-flex-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+nav a {
+    flex: 1;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+nav a:hover {
+    background-color: #ebc791;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 6px solid #a90f0f8b;
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+p {
+    text-align: left;
+}
+
+footer {
+    font-family: Lucida;
+    padding: 0.5rem;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+}
