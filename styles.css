@@ -45,6 +45,11 @@ nav a:hover {
     background-color: #8158a0;
 }
 
+.hero_text {
+    width: 50%;
+    max-width: 750px;
+}
+
 button {
     font-size: 20px;
     border-radius: 12px;
